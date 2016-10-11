@@ -11,12 +11,12 @@ $med-break: 768px
 html
 
 body
-   background-color: #F3F1ED
+	 background-color: #F3F1ED
 
 #about,
 #portfolio,
 #contact
-   padding-top: 50px
+	 padding-top: 50px
 
 h1,
 h2,
@@ -24,96 +24,96 @@ h3,
 h4,
 h5,
 h6
-   font-family: 'Dosis', sans-serif
-   text-transform: uppercase
-   color: #A52F4C
+	 font-family: 'Dosis', sans-serif
+	 text-transform: uppercase
+	 color: #A52F4C
 
 p
-   font-family: 'Open Sans', sans-serif
-   font-size: 18px
-   color: #724362
+	 font-family: 'Open Sans', sans-serif
+	 font-size: 18px
+	 color: #724362
 
 /*NAV BAR */
 /*TODO[x] Change Nav Bar colors and maybe add a better transition. */
 /*FIXME There is a pixel on the bar under each link that needs to be fixed somehow.*/
 .navbar
-   background: #724362
-   opacity: .5
-   transition: opacity .3s ease
+	 background: #724362
+	 opacity: .5
+	 transition: opacity .3s ease
 
 .navbar
-   &:hover
-   opacity: 1
-   transition: opacity .3s ease
+	 &:hover
+	 opacity: 1
+	 transition: opacity .3s ease
 
 .navbar
-   .navbar-nav
-      li
-         a
-            font-size: 20px
-            font-family: 'Dosis', sans-serif
-            text-transform: uppercase
-            text-shadow: none
-            color: #F3F1ED
+	 .navbar-nav
+			li
+				 a
+						font-size: 20px
+						font-family: 'Dosis', sans-serif
+						text-transform: uppercase
+						text-shadow: none
+						color: #F3F1ED
 
 .navbar
-   .navbar-nav
-      li>
-         a:hover
-            background: #F3F1ED
-            color: #724362
-            opacity: 1
-            transition: color .3s, opacity .3s, background .3s
+	 .navbar-nav
+			li>
+				 a:hover
+						background: #F3F1ED
+						color: #724362
+						opacity: 1
+						transition: color .3s, opacity .3s, background .3s
 
 /*HOME */
 /*CAROUSEL*/
 .carousel-indicators
-   li
-      background-color: #724362
-      border-color: #724362
+	 li
+			background-color: #724362
+			border-color: #724362
 
 .carousel-inner
-   .item
-      img
-         margin: 0 auto
-         height: 575px
-         min-width: 100%
-         max-width: none
+	 .item
+			img
+				 margin: 0 auto
+				 height: 575px
+				 min-width: 100%
+				 max-width: none
 
 /*FIXME Somehow I broke the control and now it hangs when clicked. Fix this too.*/
 .carousel-control
-   opacity: 0
-   transition: opacity .3s
-   &:hover
-      transition: opacity .3s
+	 opacity: 0
+	 transition: opacity .3s
+	 &:hover
+			transition: opacity .3s
 
 /*ABOUT*/
 #about
-   height: 100%
-   color: #989898
-   .row .col-sm-6
-      @media screen and (min-width: $sm-break) and (max-width: $med-break)
-         display: none
+	 height: 100%
+	 color: #989898
+	 .row .col-sm-6
+			@media screen and (min-width: $sm-break) and (max-width: $med-break)
+				 display: none
 
 /*PROGRESS BAR*/
 
 .progress
-   border-radius: none
-   background-color: #bababa
-   background-image: none
-   height: 14px
-   -webkit-box-shadow: none
-   box-shadow: none
+	 border-radius: none
+	 background-color: #bababa
+	 background-image: none
+	 height: 14px
+	 -webkit-box-shadow: none
+	 box-shadow: none
 
 .progress-bar
-   color: #724362
-   font-weight: 700
-   border: .5px solid #F0C0BA
-   line-height: 14px
-   background-image: none
-   background-color: #F0C0BA
-   -webkit-box-shadow: none
-   box-shadow: none
+	 color: #724362
+	 font-weight: 700
+	 border: .5px solid #F0C0BA
+	 line-height: 14px
+	 background-image: none
+	 background-color: #F0C0BA
+	 -webkit-box-shadow: none
+	 box-shadow: none
 
 
 
@@ -122,50 +122,52 @@ p
 /*FLEXBOX*/
 /*FIXME If possible, find out how to transition out of the hover. The cutoff is weird.*/
 .flexbox
-   width: 100%
-   display: flex
-   flex-wrap: wrap
-   justify-content: center
-   align-content: center
+	 width: 100%
+	 display: flex
+	 flex-wrap: wrap
+	 justify-content: center
+	 align-content: center
 
 .flex-item
-   position: relative
-   flex: none
+	 position: relative
+	 flex: none
 
 .imgcaption
-   position: absolute
-   height: 100%
-   line-height: 300px
-   margin: auto
-   top: 0
-   right: 0
-   bottom: 0
-   left: 0
-   color: #e8e8e8
-   text-align: center
-   visibility: hidden
+	 position: absolute
+	 height: 100%
+	 line-height: 300px
+	 margin: auto
+	 top: 0
+	 right: 0
+	 bottom: 0
+	 left: 0
+	 color: #e8e8e8
+	 text-align: center
+	 visibility: hidden
 
 .flex-item
-   &:hover
-      .imgcaption
-         visibility: visible
-         background-color: hsla(0, 0%, 0%, 0.85)
-         cursor: pointer
-         transition: background-color .2s ease
+	 &:hover
+			.imgcaption
+				 visibility: visible
+				 background-color: hsla(0, 0%, 0%, 0.85)
+				 cursor: pointer
+				 transition: background-color .2s ease
 
 /*CONTACT*/
 
 #contact
-   height: 100%
-   .container
-      position: relative
-      top: 100px
-   h3
-      margin: 30px
-   a
-      width: 0
-      text-decoration: none
-      color: #F0C0BA
-      &:hover
-         color: #A52F4C
-         transition: color .3ss
+	 height: 100%
+	 .container
+			position: relative
+			top: 100px
+	 .fa
+		 font-size: 40px
+	 h3
+			margin: 30px
+	 a
+			width: 0
+			text-decoration: none
+			color: #F0C0BA
+			&:hover
+				 color: #A52F4C
+				 transition: color .3ss

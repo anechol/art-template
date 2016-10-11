@@ -136,6 +136,8 @@ p {
   #contact .container {
     position: relative;
     top: 100px; }
+  #contact .fa {
+    font-size: 40px; }
   #contact h3 {
     margin: 30px; }
   #contact a {
